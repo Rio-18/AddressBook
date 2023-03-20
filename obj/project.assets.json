@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin\\source\\repos\\AddressBook\\AddressBook\\AddressBook.csproj",
-      "projectName": "AddressBook",
-      "projectPath": "C:\\Users\\admin\\source\\repos\\AddressBook\\AddressBook\\AddressBook.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\source\\repos\\AddressBook\\AddressBook\\AddressBookProgram.csproj",
+      "projectName": "AddressBookProgram",
+      "projectPath": "C:\\Users\\admin\\source\\repos\\AddressBook\\AddressBook\\AddressBookProgram.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\admin\\source\\repos\\AddressBook\\AddressBook\\obj\\",
       "projectStyle": "PackageReference",
