@@ -1,0 +1,20 @@
+﻿Contact Details
+
+
+First Name: Riya
+Last Name: More
+Address: karve nagar
+City: pune
+State: mh
+Zip Code: 411052
+PhoneNumber: 83789100
+E mail: riya@gmail.com
+
+First Name: riya
+Last Name: rajput
+Address: aayodhya nagar
+City: shahada
+State: mh
+Zip Code: 425409
+PhoneNumber: 12345678
+E mail: riyu@gmail.com
