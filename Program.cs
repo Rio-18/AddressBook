@@ -1,4 +1,6 @@
 ﻿
+using AddressBook;
+
 namespace AddressBookProgram
 {
     public class Program
@@ -6,7 +8,7 @@ namespace AddressBookProgram
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the Address Book problem");
-            AddressBook addBook = new AddressBook();
+            NewContacts addBook = new NewContacts();
             bool flag = true;
             while (flag)
             {
