@@ -28,7 +28,7 @@ namespace AddressBook
             Console.Write("State: ");
             contact.State = Console.ReadLine();
             Console.Write("Zip Code: ");
-            contact.Zip = Convert.ToInt32(Console.ReadLine());
+            contact.Zipcode = Convert.ToInt32(Console.ReadLine());
             Console.Write("Phone Number: ");
             contact.PhoneNumber = Console.ReadLine();
             Console.Write("Email: ");
@@ -36,13 +36,13 @@ namespace AddressBook
 
             if (contactsList.Contains(contact))
             {
-                Console.WriteLine("this Person is already in the collection.");
+                Console.WriteLine("this Person is already in the collection. ");
             }
             else
             {
                 contactsList.Add(contact);
                 addressBookDictonary.Add(contact.FirstName, contact);
-                Console.WriteLine("this Person is successfully add to the collection.");
+                Console.WriteLine("this Person is successfully add to the collection. ");
             }
         }
 
@@ -55,7 +55,7 @@ namespace AddressBook
                 Console.WriteLine("Address: " + contact.Value.Address);
                 Console.WriteLine("City: " + contact.Value.City);
                 Console.WriteLine("State: " + contact.Value.State);
-                Console.WriteLine("Zip Code: " + contact.Value.Zip);
+                Console.WriteLine("Zip Code: " + contact.Value.Zipcode);
                 Console.WriteLine("PhoneNumber: " + contact.Value.PhoneNumber);
                 Console.WriteLine("E mail: " + contact.Value.Email);
             }
@@ -95,7 +95,7 @@ namespace AddressBook
                                 break;
                             case 4:
                                 Console.Write("Enter The New Zipcode: ");
-                                contact.Value.Zip = Convert.ToInt32(Console.ReadLine());
+                                contact.Value.Zipcode = Convert.ToInt32(Console.ReadLine());
                                 break;
                             case 5:
                                 Console.Write("Enter The New Phone Number: ");
@@ -134,6 +134,17 @@ namespace AddressBook
                 {
                     Console.WriteLine("Contact name not found ");
                 }
+            }
+        }
+
+        public void SearchByCity()
+        {
+            Console.Write("Enter the City Name: ");
+            string CityName = Console.ReadLine();
+            Console.WriteLine("All the Contact of: " + CityName);
+            foreach (var contact in contactsList.FindAll(x => x.City == CityName))
+            {
+                Console.WriteLine("Name: " + contact.FirstName + " " + contact.LastName);
             }
         }
     }
